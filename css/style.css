@@ -1,0 +1,410 @@
+@import 'reset.css';
+
+/* reset complete */
+
+html, body {
+    box-sizing: border-box;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #000;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 28px;
+    text-align: center;
+    line-height: 28px;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 18px;
+    text-shadow: 2px 2px 1px #000;
+    text-align: center;
+}
+
+/* header */
+
+.header {
+    background: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.intro {
+    mix-blend-mode: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    text-shadow: 2px 2px 1px #000;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 80px;
+    line-height: 80px;
+    color: #fff;
+}
+
+.header-subtitle {
+    font-size: 56px;
+    line-height: 56px;
+    color: #fff;
+}
+
+.header-links {
+    margin-top: 100px;
+    display: flex;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #fff;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: ease-in-out .1s;
+}
+
+.social-vk:hover {
+    fill: #4a76a8;
+    border-color: #4a76a8;
+}
+
+.social-inst:hover {
+    fill: url(#linear-gradient);
+    border-color: red;
+}
+
+.social-git:hover {
+    fill: #9c0c9e;
+    border-color: #9c0c9e;
+}
+
+/* about */
+
+.about {
+    background: #000;
+    padding: 45px 5px 45px;
+    color: #fff;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.about-title {
+    margin-bottom: 5px;
+}
+.about-subtitle {
+    margin-bottom: 10px;
+}
+
+.about-text {
+    width: 85%;
+}
+
+.about-img {
+    max-width: 50%;
+}
+
+
+/* works */
+
+.works {
+    background: url('https://images.pexels.com/photos/3688579/pexels-photo-3688579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); /*'https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 45px 0;
+}
+
+.works-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #0000008f;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 0 25px;
+    overflow: hidden;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-bottom: 20px;
+}
+
+.div-title {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.div-subtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.div-svg {
+    fill: #fff;
+}
+
+
+/* portfolio */
+
+.portfolio {
+    background: #000;
+    padding: 45px 15px;
+}
+
+.portfolio-content {
+    background: url(https://images.pexels.com/photos/208901/pexels-photo-208901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    border-radius: 15px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio-title {
+    margin-bottom: 10px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 15px;
+    overflow: hidden;
+    margin-right: 8px;
+    margin-left: 8px;
+    background: #000000be; 
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.item-img {
+    border-radius: 20px;
+    width: 85%;
+}
+
+.item-title {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+
+/* contacts */
+
+.contacts {
+    background: url('https://images.pexels.com/photos/1737957/pexels-photo-1737957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 45px 15px;
+}
+
+.contacts-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 70%;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.name {
+    display: inline-block;
+    border-radius: 50px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: none;
+    overflow: hidden;
+    padding: 12px 10px;
+    margin-right: 8px;
+}
+
+.mail {
+    display: inline-block;
+    border-radius: 50px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: none;
+    overflow: hidden;
+    padding: 12px 10px;
+    margin-left: 8px;
+}
+
+.text-form {
+    width: 97%;
+    border-radius: 20px;
+    padding: 12px 10px;
+    margin: 8px;
+    overflow: hidden;
+    min-height: 250px;
+    border: none;
+}
+
+
+/* footer */
+
+.footer {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #3a3a3a;
+}
+
+
+
+
+
+/* media */
+
+@media (max-width: 1190px) {
+    .header-text {
+        font-size: 72px;
+    }
+
+    .header-subtitle {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 960px) {
+    .contacts-form {
+        width: 100%;
+    }
+
+    .text-form {
+        width: 93%;
+    }
+}
+
+@media (max-width: 670px) {
+    .header-text {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    .header-subtitle {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .about-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-text {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .item-title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
